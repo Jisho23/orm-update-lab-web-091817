@@ -103,6 +103,7 @@ describe "Student" do
       josh.name = "Josh Jr."
       josh.update
       josh_jr = Student.find_by_name("Josh Jr.")
+      binding.pry
       expect(josh_jr.id).to eq(josh.id)
     end
   end
